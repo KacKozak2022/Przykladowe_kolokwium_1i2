@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Przykładowe_kolokwium_1i2", "Przykładowe_kolokwium_1i2.vcxproj", "{84914A7D-19B8-4E33-9813-8C1B3988248D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84914A7D-19B8-4E33-9813-8C1B3988248D}.Debug|x64.ActiveCfg = Debug|x64
+		{84914A7D-19B8-4E33-9813-8C1B3988248D}.Debug|x64.Build.0 = Debug|x64
+		{84914A7D-19B8-4E33-9813-8C1B3988248D}.Debug|x86.ActiveCfg = Debug|Win32
+		{84914A7D-19B8-4E33-9813-8C1B3988248D}.Debug|x86.Build.0 = Debug|Win32
+		{84914A7D-19B8-4E33-9813-8C1B3988248D}.Release|x64.ActiveCfg = Release|x64
+		{84914A7D-19B8-4E33-9813-8C1B3988248D}.Release|x64.Build.0 = Release|x64
+		{84914A7D-19B8-4E33-9813-8C1B3988248D}.Release|x86.ActiveCfg = Release|Win32
+		{84914A7D-19B8-4E33-9813-8C1B3988248D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC08411D-5621-4AF1-995B-AC73D83DE3BB}
+	EndGlobalSection
+EndGlobal
