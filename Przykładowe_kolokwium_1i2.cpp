@@ -88,7 +88,7 @@ int main()
 {
 	setlocale(LC_ALL, "");
 
-	srand(1967);
+	srand(time(NULL));
 
 	constexpr int ROZMIAR = 5;
 	int tablica[ROZMIAR][ROZMIAR], i, j;
@@ -125,8 +125,8 @@ int main()
 
 	} while (kolumna < 0 || kolumna > ROZMIAR - 1);
 
-	int* wsk1 = &tablica[0][0] + (ROZMIAR * kolumna), temp = 0,
-		* wsk2 = wsk1 + ROZMIAR + (ROZMIAR * kolumna);
+	int* wsk1 = &tablica[0][0] + kolumna, temp = 0,
+		* wsk2 = wsk1 + ROZMIAR + kolumna;
 
 
 	for (i = 0; i < ROZMIAR; i++) 
@@ -143,7 +143,7 @@ int main()
 		}
 	}
 
-	cout << "Tablica z posortowaną kolumną nr " << kolumna << ":" << endl << endl;
+	cout << endl << "Tablica z posortowaną kolumną nr " << kolumna << ":" << endl << endl;
 
 	for (i = 0; i < ROZMIAR; i++)
 	{
