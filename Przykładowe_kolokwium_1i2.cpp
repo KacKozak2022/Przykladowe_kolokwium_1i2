@@ -35,10 +35,9 @@ int main()
 		do
 		{
 			cout << "Podaj poprawną liczbę naturalną: "; 
-			cin >> temp;
-			liczba = (int)temp;
+			cin >> liczba;
 
-		} while (temp / liczba != 1 || liczba <= 0);
+		} while (liczba != floor(liczba) || liczba <= 0);
 
 		if (liczba % 2 == 0)
 			licznik_parzysty++;
