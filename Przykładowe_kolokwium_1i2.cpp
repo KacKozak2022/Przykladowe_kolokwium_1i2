@@ -13,7 +13,7 @@ int main()
 {
 	setlocale(LC_ALL, "");
 
-	int n;
+	double n;
 
 	do
 	{
@@ -21,7 +21,7 @@ int main()
 		cin >> n;
 		cout << endl;
 
-	} while (n % 2 == 1 || n != floor(n) || n <= 0);
+	} while (n != floor(n) || (int)n % 2 == 1 ||  n <= 0);
 	
 	int liczba, licznik_parzysty = 0;
 	double g = 0, s = 0;
@@ -75,7 +75,6 @@ int main()
 
 #ifdef Blok2
 
-#include <algorithm>
 #include <cstdlib>
 #include <ctime>
 #include <iomanip>
@@ -123,20 +122,20 @@ int main()
 
 	} while (kolumna < 0 || kolumna > ROZMIAR - 1);
 
-	int* wsk1 = &tablica[0][0] + kolumna, temp = 0,
-		* wsk2 = wsk1 + ROZMIAR + kolumna;
+	int* wsk1 = &tablica[0][0] + kolumna, temp = 0;
 
 
 	for (i = 0; i < ROZMIAR; i++) 
 	{
 		for (j = i + 1; j < ROZMIAR; j++) 
 		{
-			if (*(wsk1 + (j * ROZMIAR)) < *(wsk1 + (i * ROZMIAR))) 
-			{
+			int* wsk2 = wsk1 + (i * ROZMIAR), * wsk3 = wsk1 + (j * ROZMIAR);
 
-				temp = *(wsk1 + i * ROZMIAR);
-				*(wsk1 + i * ROZMIAR) = *(wsk1 + j * ROZMIAR);
-				*(wsk1 + j * ROZMIAR) = temp;
+			if (*wsk3 < *wsk2)
+			{
+				temp = *wsk2;
+				*wsk2 = *wsk3;
+				*wsk3 = temp;
 			}
 		}
 	}
