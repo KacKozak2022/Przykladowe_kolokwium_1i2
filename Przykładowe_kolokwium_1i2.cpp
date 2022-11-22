@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-#define Blok2
+#define Blok1
 
 #ifdef Blok1
 
@@ -45,16 +45,19 @@ int main()
 		else
 			licznik_parzysty = 0;
 
-		if (i > 1)
+		if (liczba % 5 != 0)
 		{
-			g = pow((pow(g, (i - 1)) * liczba), 1.0/i);
+			if (i > 1)
+			{
+				g = pow((pow(g, (i - 1)) * liczba), 1.0 / i);
 
-			s = ((s * (i - 1)) + liczba) / i;
-		}
-		else
-		{
-			g = liczba;
-			s = liczba;
+				s = ((s * (i - 1)) + liczba) / i;
+			}
+			else
+			{
+				g = liczba;
+				s = liczba;
+			}
 		}
 	}
 
