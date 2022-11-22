@@ -24,7 +24,7 @@ int main()
 	} while (n != floor(n) || (int)n % 2 == 1 ||  n <= 0);
 	
 	int liczba, licznik_parzysty = 0;
-	double g = 0, s = 0;
+	double g = 1, s = 1;
 
 	for (int i = 1; i <= n && licznik_parzysty < 3; i++) //i=1 dla klarowności zapisu
 	{
@@ -42,17 +42,9 @@ int main()
 
 		if (liczba % 5 != 0)
 		{
-			if (i > 1)
-			{
-				g = pow((pow(g, (i - 1)) * liczba), 1.0 / i);
+			g = pow((pow(g, (i - 1)) * liczba), 1.0 / i);
 
-				s = ((s * (i - 1)) + liczba) / i;
-			}
-			else
-			{
-				g = liczba;
-				s = liczba;
-			}
+			s = ((s * (i - 1)) + liczba) / i;
 		}
 	}
 
