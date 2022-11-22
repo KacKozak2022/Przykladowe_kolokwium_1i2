@@ -14,19 +14,15 @@ int main()
 	setlocale(LC_ALL, "");
 
 	int n;
-	double temp;
 
 	do
 	{
 		cout << "Podaj poprawne n: ";
-		cin >> temp;
+		cin >> n;
 		cout << endl;
-		n = (int)temp;
 
-	} while (n % 2 == 1 || temp / n != 1 || n <= 0);
+	} while (n % 2 == 1 || n != floor(n) || n <= 0);
 	
-	temp = 0;
-
 	int liczba, licznik_parzysty = 0;
 	double g = 0, s = 0;
 
