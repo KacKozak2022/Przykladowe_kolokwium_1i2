@@ -53,10 +53,10 @@ int main()
 
 	constexpr double e = 2.72;
 	
-	if ((g - 1) / (g + 1) > 0)
+	if (g - 1 > 0)
 	{
 		double y = log10((g - 1) / (g + 1)) * pow(s, e);
-		cout << "Funkcja y = " << scientific << showpos << setprecision(8) << fixed << y << endl;
+		cout << "Funkcja y = " << scientific << setprecision(8) << y << endl;
 	}
 	else
 		cout << "Nie mogę policzyć funkcji y" << endl;
